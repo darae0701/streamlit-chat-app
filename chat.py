@@ -10,7 +10,9 @@ def login_page():
 
     pwd = st.text_input("비밀번호를 입력하세요", type="password")
     user_name = st.text_input("사용자 이름을 입력하세요")
-
+    
+    login_clicked = st.button("로그인")
+    
     if st.button("로그인"):
         if pwd == PASSWORD and user_name.strip():
             st.session_state.authenticated = True

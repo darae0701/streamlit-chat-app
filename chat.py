@@ -55,7 +55,7 @@ def submit_message():
 # 채팅 초기화 버튼
 if st.button("💣 초기화"):
     clear_chat()
-    st.experimental_rerun()
+    st.rerun()
 
 # 채팅 메시지 입력
 st.text_input("메시지 입력", key="msg", on_change=submit_message)

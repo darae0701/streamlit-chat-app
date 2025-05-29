@@ -51,7 +51,7 @@ def submit_message():
         chat.append({"name": st.session_state.name, "message": st.session_state.msg})
         save_chat(chat)
         st.session_state.msg = ""  # 입력창 비우기
-        st.rerun()  # 화면 다시 그리기
+        
 # 채팅 초기화 버튼
 if st.button("💣 초기화"):
     clear_chat()

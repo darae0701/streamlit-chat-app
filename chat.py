@@ -19,7 +19,6 @@ def load_chat():
             f.write("[]")  # 빈 JSON 배열 저장 등
         return []
     with open(CHAT_LOG_PATH, "r") as f:
-        data = f.read()
         return json.load(f)
 
 # 채팅 저장
